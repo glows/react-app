@@ -1,0 +1,205 @@
+.head{
+    text-align: center;
+    font-size: 18px;
+    color: #FF7827;
+    height: 25px;
+    background-color: #F5F5F5;
+}
+.profile-info {
+  width: 100%;
+  height: 109.5px;
+  box-sizing: border-box;
+  padding: 22.5px 20px 22.5px;
+  /* background-image: linear-gradient(-90deg, @primary-color, @primary-color-light); */
+  display: flex;
+  position: relative;
+  background: #FF7827;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+
+.avatar {
+    flex: 0 0 64.3px;
+    width: 64.3px;
+    height: 64.3px;
+    border-radius: 100%;
+    /* overflow: hidden; */
+    position: relative;
+    color: #dcdcdc;
+    /* font-size: 120px; */
+    /* background: #F5F5F5; */
+}
+.arrow{
+  position: absolute;
+  right: 20px;
+}
+.icon-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+  }
+  .info {
+    color: #fff;
+    margin-left: 10px;
+    /* margin-top: 16px; */
+    /* font-size: 18px; */
+  }
+  .text {
+    font-size: 0;
+  }
+  .icon, span {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #fff;
+  }
+
+  /* 我的收入 */
+  .balance{
+    width: 100%;
+    height: 97px;
+    background: #fff;
+    margin-top: 5px;
+  }
+  .balance-title{
+    font-size: 16px;
+  }
+  .clf{
+    clear: both;
+  }
+  .balance-name{
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+  .balance-arrow{
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+  }
+  .balance-list{
+    display:flex;
+    justify-content:space-between;
+    /* Android */
+	  display: -webkit-box;
+	  -webkit-box-pack: justify;
+	  
+	  /* iOS */
+	  display: -webkit-flex;
+	  -webkit-justify-content: space-between;
+    
+	  /* IE10 */
+	  display: -ms-flexbox;
+	  -ms-flex-pack:justify;
+    margin: 0 40px;
+  }
+  .balance-item{
+    text-align: center
+  }
+  .balance-item > p{
+    color: #999;
+  }
+  .balance-item > a {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+  /* 待办事项 */
+  .todo{
+    width: 100%;
+    height: 115px;
+    background: #fff;
+    margin-top: 15px;
+  }
+  .todo-title{
+    font-size: 16px;
+  }
+  .todo-name {
+    padding: 10px;
+  }
+  .todo-list{
+    display:flex;
+    justify-content:space-between;
+    margin: 0 40px;
+  }
+  .todo-item{
+    float: left;
+  }
+  .todo-item-name{
+    margin-top: 5px;
+  }
+  .todo-icon{
+    width: 45px;
+    height: 45px;
+  }
+  .todo-item > p{
+    /* color: #999; */
+  }
+  
+
+
+  /* 跳转列表 */
+.list{
+  height: 50px;
+  font-size: 13px !important;
+}
+
+
+
+
+/* 箭头 */
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.left{
+  /* position: absolute; */
+  transform: rotate(180deg);
+ }
+ .left:before,.left:after{
+  position: absolute;
+  content: '';
+  border-top: 10px transparent dashed;
+  border-left: 10px transparent dashed;
+  border-bottom: 10px transparent dashed;
+  /* border-right: 10px #fff solid; */
+ }
+ .left:before{
+  border-right: 10px #0099CC solid;
+ }
+ .left:after{
+  left: 1px; /*覆盖并错开1px*/
+  border-right: 10px #fff solid;
+ }
+ .right{
+   margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #cccf;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+ }
+ .r-arrow{
+  display: inline-block;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    width: 12px;
+    height: 12px;
+    border-color: #FFC9A9;
+    transform: rotate(45deg);
+    margin: 0px auto auto 2px;
+ }
